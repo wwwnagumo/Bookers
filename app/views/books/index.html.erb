@@ -12,14 +12,14 @@
     <% @books.each do |book| %>
 　    <tr>
 　　    <td><%= book.title %></td>
-　　    <td><%= book.body %></td>
-        <td><%= link_to "Show", book_path(book.id) %> <%= link_to "Edit", edit_book_path(book) %> <%= link_to "Delete", books_path(book), method: :delete, "data-confirm" => "Are you sure?" %></td>
+　　    <td class="tdbody"><%= book.body %></td>
+        <td><%= link_to "Show", book_path(book.id) %> <%= link_to "Edit", edit_book_path(book) %> <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?" %></td>
       </tr>
       <% end %>
     </tbody>
 </table>
-
-<h1><strong>New book</strong></h1>
+<br>
+<h1><strong>New book</strong></h1><br>
 <%= form_for(@book) do |f| %>
 
   <h4><strong>Title</strong></h4>
@@ -27,7 +27,7 @@
 
   <h4><strong>body</strong></h4>
   <%= f.text_area :body %>
-
+  <br>
   <%= f.submit 'Create Book' %>
 
 </body>

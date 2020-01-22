@@ -24,11 +24,11 @@ body {
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
+  margin: 35px;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 strong {
@@ -37,23 +37,24 @@ strong {
 
 p {
   line-height: 40px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 a {
   color: #333;
   text-decoration: underline;
+  font-weight: 600;
 }
 table {
   display: table;
-  border-collapse: separate;
+  width: 800px;
   border-spacing: 2px;
 }
 th {
   display: table-cell;
   vertical-align: inherit;
   font-weight: bold;
-  text-align: -internal-center;
+  text-align: center;
   padding-bottom: 5px;
 }
 
@@ -63,6 +64,10 @@ td {
   padding-right: 5px;
 }
 
-.notise {
+td.tdbody {
+  width: 400px;
+}
+
+.notice {
   color: limegreen;
 }
