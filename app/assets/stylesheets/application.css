@@ -71,3 +71,27 @@ td.tdbody {
 .notice {
   color: limegreen;
 }
+
+h2 {
+  font-size: 12px;
+  padding: 2px;
+}
+
+.error_explanation {
+  width: 380px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #c00;
+  color: #fff;
+  padding: 2px;
+}
+
+ul {
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
