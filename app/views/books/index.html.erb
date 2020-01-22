@@ -20,8 +20,14 @@
 </table>
 <br>
 <h1><strong>New book</strong></h1><br>
-<%= form_for(@book) do |f| %>
 
+<%= form_for(@book) do |f| %>
+	<% if @book.errors.any? %>
+		<%= @book.errors.count %>
+		<% @book.errors.full_messages.each do |message| %>
+		<div><%= message %></div>
+		<% end %>
+	<% end %>
   <h4><strong>Title</strong></h4>
   <%= f.text_field :title %>
 
